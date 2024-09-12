@@ -12,6 +12,6 @@ public class HealthCheckApi {
 
     @GetMapping("/")
     public String test() {
-        return "Hello!";
+        return "Hello, Recipable!";
     }
 }
