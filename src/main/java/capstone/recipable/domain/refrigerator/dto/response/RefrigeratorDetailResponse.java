@@ -7,6 +7,11 @@ public record RefrigeratorDetailResponse(
         String ingredientImage
 ) {
     public static RefrigeratorDetailResponse of(Long ingredientId,String ingredientName, Long expiredRemaining,String ingredientImage) {
-        return new RefrigeratorDetailResponse(ingredientId, ingredientName, expiredRemaining, ingredientImage);
+        return new RefrigeratorDetailResponse(
+                ingredientId,
+                ingredientName,
+                expiredRemaining != null ? expiredRemaining : null,
+                ingredientImage
+        );
     }
 }
