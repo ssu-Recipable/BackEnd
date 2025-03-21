@@ -24,7 +24,6 @@ jobs:
       run: |
         cd ./src/main
 
-        mkdir -p ./src/main/resources
         cd ./resources
         touch ./application.yml
         echo "$APPLICATION_MAIN" > ./application.yml
